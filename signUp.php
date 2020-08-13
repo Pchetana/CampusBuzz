@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Login</title>
+	<script language="javascript">
+	function check()
+	{
+
+	 if(document.form1.pass.value=="")
+	  {
+		alert("Plese Enter Your Password");
+		document.form1.pass.focus();
+		return false;
+	  } 
+
+	  if(document.form1.username.value=="")
+	  {
+		alert("Plese Enter Your Name");
+		document.form1.name.focus();
+		return false;
+	  }
+	  
+ 
+</script>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Basic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gothic+A1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Article-Clean.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Phone.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Testimonials.css">
+</head>
+
+<body style="background-image: url(&quot;assets/img/baaa.jpg&quot;);background-size: cover;background-repeat: no-repeat;">
+    <div class="register-photo" style="background-image: url(&quot;assets/img/baaa.jpg&quot;);">
+        <div class="form-container">
+		<form name="form1" action="" method="post" onSubmit="return check();">
+            <form method="post" style="background-image: url(&quot;assets/img/blaa.jpg&quot;);">
+                <h2 class="text-center" style="color: rgb(248,250,252);"><strong>Create</strong> an account.</h2>
+                <div class="form-group"><input class="form-control" type="username" name="username" placeholder="username" required></div>
+                <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password" required></div>
+              
+                <div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit" value="signup" href="Home.php">Sign Up</button></div><a class="already" href="Login.php" style="color: rgb(249,249,249);">You already have an account? Login here.</a></form>
+        </form>
+		</div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

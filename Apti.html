@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Basic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gothic+A1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/css/Article-Clean.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Highlight-Phone.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Testimonials.css">
+</head>
+
+<body style="background-image: url(&quot;assets/img/baaa.jpg&quot;);background-repeat: round;background-size: cover;color: rgb(244,246,248);"><img style="width: auto;height: 250px;background-color: #ef2929;color: rgb(57,149,242);background-image: url(&quot;assets/img/i2it.png&quot;);margin: 20px;margin-right: 5px;" src="assets/img/i2it.png"><strong style="font-size: 20px;margin: 30px;margin-left: 2px;">International Institute InIformation Technology&nbsp;</strong>
+    <ul
+        class="nav nav-tabs" style="background-color: #560e78;height: 50px;">
+        <li class="nav-item"><a class="nav-link active nav--link" href="Home.php" style="color: rgb(229,236,244);height: 50px;font-size: 20px;margin-right: 20px;margin-left: 20px;background-color: rgb(93,19,119);">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="PlacedStudent.php" style="color: rgb(247,250,254);height: 50px;filter: hue-rotate(0deg) invert(0%);font-family: 'Fira Sans', sans-serif;font-size: 20px;margin-right: 20px;margin-left: 20px;">Placed Student</a></li>
+        <li class="nav-item"><a class="nav-link" href="Apti.html" style="color: rgb(228,236,244);height: 50px;font-size: 20px;margin-right: 20px;margin-left: 20px;">Aptitude</a></li>
+        <li class="nav-item"><a class="nav-link" href="GdTopics.php" style="color: rgb(247,250,254);height: 50px;filter: hue-rotate(0deg) invert(0%);font-family: 'Fira Sans', sans-serif;font-size: 20px;margin-right: 20px;margin-left: 20px;">G D Topics</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.php" style="color: rgb(228,236,244);height: 50px;font-size: 20px;margin-right: 20px;margin-left: 20px;">Feedback</a></li>
+			<?php if (isset($_SESSION['uid'])) {?>
+                <li class="nav-item"><a class="nav-link" href="Logout.php" style="margin-right: 20px;margin-left: 20px;color: rgb(251,251,252);font-size: 20px;">Logout</a></li>
+            <?php } else { ?>
+                <li class="nav-item"><a class="nav-link" href="Index.php" style="margin-right: 20px;margin-left: 20px;color: rgb(251,251,252);font-size: 20px;">Login</a></li>
+            <?php } ?> </ul>
+            <div class="card" style="margin: 50px;background-color: rgba(255,255,255,0);margin-bottom: 0px;">
+                <div class="card-body" style="margin: 10px;">
+                    <h4 class="card-title" style="font-family: Bitter, serif;font-size: 40px;color: rgb(252,251,252);">INFOSYS</h4>
+                    <p class="card-text" style="color: rgb(246,250,255);"></p>
+                    <p style="color: rgb(252,252,252);font-size: 23px;"><em>Experience is not what happens to a person.</em><br><em>It is what a person does with what happens to him.</em>&nbsp;—Aldous Huxley<br></p>
+                </div>
+            </div>
+            <div class="highlight-phone" style="background-color: rgba(255,255,255,0.95);margin: 30px;padding-top: 0px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="intro">
+                                <h2 style="color: rgb(69,152,234);font-size: 40px;padding-right: 0px;margin-bottom: 0px;">Year 2018<button class="btn btn-primary" type="button" style="margin: 30px;width: 250px;font-size: 15px;"><a href="assets/pdf/infi2019.pdf" style="color: rgb(249,250,251);">Download PDF</a></button></h2>
+                                <h1 style="color: rgb(69,152,234);margin-bottom: 20px;">Year 2017<button class="btn btn-primary" type="button" style="margin-left: 43px;font-size: 15px;width: 250px;"><a href="assets/pdf/info2018.pdf" style="color: rgb(251,251,252);">DOWNLOAD PDF</a></button></h1>
+                                <h1 style="color: rgb(69,152,234);margin-top: 30px;margin-bottom: 20px;">Year 2016<button class="btn btn-primary" type="button" style="margin-left: 43px;font-size: 15px;width: 250px;"><a href="assets/pdf/info2017.pdf" style="color: rgb(250,250,251);">DOWNLOAD PDF</a></button></h1>
+                                <h1 style="color: rgb(69,152,234);margin-top: 30px;margin-bottom: 20px;">Year 2015<button class="btn btn-primary" type="button" style="margin-left: 43px;font-size: 15px;width: 250px;"><a href="assets/pdf/info2019.pdf" style="color: rgb(251,252,252);">DOWNLOAD PDF</a></button></h1>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="d-none d-md-block iphone-mockup"><img class="device" src="assets/img/iphone.svg">
+                                <div class="screen" style="background-image: url(&quot;assets/img/book.jpg&quot;);background-size: cover;background-repeat: no-repeat;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin: 34px;color: rgb(244,246,248);">NICE System</h1>
+            <p style="margin: 34px;"><strong><em>"To be a great champion, you must believe you are the best. If you're not, pretend you are."</em></strong>&nbsp;—Muhammad Ali<br><br></p>
+            <div class="highlight-phone" style="background-color: rgba(255,255,255,0.95);margin: 30px;padding-top: 0px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="intro">
+                                <h2 style="color: rgb(69,152,234);font-size: 40px;padding-right: 0px;margin-bottom: 0px;">Year 2018<button class="btn btn-primary" type="button" style="margin: 30px;width: 250px;font-size: 15px;"><a href="assets/pdf/nice2018.pdf" style="color: rgb(248,249,251);">DOWNLOAD PDF</a></button></h2>
+                                <h1 style="color: rgb(69,152,234);margin-bottom: 20px;">Year 2017<button class="btn btn-primary" type="button" style="margin-left: 43px;font-size: 15px;width: 250px;"><a href="assets/pdf/nice2017.pdf" style="color: rgb(250,251,252);">DOWNLOAD PDF</a></button></h1>
+                                <h1 style="color: rgb(69,152,234);margin-top: 30px;margin-bottom: 20px;">Year 2016<button class="btn btn-primary" type="button" style="margin-left: 43px;font-size: 15px;width: 250px;"><a href="assets/pdf/nice2018.pdf" style="color: rgb(245,247,249);"></a><a href="#" style="color: rgb(243,246,249);">DOWNLOAD PDF</a></button></h1>
+                                <h1
+                                    style="color: rgb(69,152,234);margin-top: 30px;margin-bottom: 20px;">Year 2015<button class="btn btn-primary" type="button" style="margin-left: 43px;font-size: 15px;width: 250px;"><a href="assets/pdf/nice2017" style="color: rgb(250,253,255);">DOWNLOAD PDF</a></button></h1>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="d-none d-md-block iphone-mockup"><img class="device" src="assets/img/iphone.svg">
+                                <div class="screen" style="background-image: url(&quot;assets/img/book.jpg&quot;);background-size: cover;background-repeat: no-repeat;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin: 30px;color: rgb(247,249,251);padding-left: 32px;">L&T Solution&nbsp;</h1>
+            <p style="margin: 30px;color: rgb(241,244,247);margin-left: 40px;"><em>One person with courage makes a majority.</em>&nbsp;—Andrew Jackson<br><br></p>
+            <div class="text-monospace text-center features-boxed" style="margin: 20px;background-color: rgba(238,244,247,0);"></div>
+            <div class="highlight-phone" style="background-color: rgba(255,255,255,0.95);margin: 30px;padding-top: 0px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="intro">
+                                <h2 style="color: rgb(69,152,234);font-size: 40px;padding-right: 0px;margin-bottom: 0px;">Year 2018<button class="btn btn-primary" type="button" style="margin: 30px;width: 250px;font-size: 15px;"><a href="assets/pdf/L&T soln.pdf" style="color: rgb(236,239,241);">DOWNLOAD PDF</a></button></h2>
+                                <h1 style="color: rgb(69,152,234);margin-bottom: 20px;">Year 2017<button class="btn btn-primary" type="button" style="margin-left: 43px;font-size: 15px;width: 250px;"><a href="assets/pdf/L&T 2017.pdf" style="color: rgb(246,247,248);">DOWNLOAD PDF</a></button></h1>
+                                <h1 style="color: rgb(69,152,234);margin-top: 30px;margin-bottom: 20px;">Year 2016<button class="btn btn-primary" type="button" style="margin-left: 43px;font-size: 15px;width: 250px;"><a href="#" style="color: rgb(246,247,249);">DOWNLOAD PDF</a></button></h1>
+                                <h1 style="color: rgb(69,152,234);margin-top: 30px;margin-bottom: 20px;">Year 2015<button class="btn btn-primary" type="button" style="margin-left: 43px;font-size: 15px;width: 250px;"><a href="#" style="color: rgb(248,250,252);">DOWNLOAD PDF</a></button></h1>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="d-none d-md-block iphone-mockup"><img class="device" src="assets/img/iphone.svg">
+                                <div class="screen" style="background-image: url(&quot;assets/img/book.jpg&quot;);background-size: cover;background-repeat: no-repeat;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
